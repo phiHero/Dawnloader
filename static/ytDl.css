@@ -1,0 +1,13 @@
+.downloader input {
+  background: rgb(255, 216, 216);
+  border: 3px solid red;
+}
+.downloader button {
+  background-color: red;
+}
+main .instruction {
+  background: rgb(255, 216, 216);
+  padding: 20px 30px;
+  border: 2px solid red;
+  border-radius: 5px;
+}

@@ -8,18 +8,7 @@
 
 @media screen and (max-width: 600px) {
   main .instruction {
-    margin-top: 50px;
     background: #c3ddff;
     border: 2px solid #1877f2;
-    border-radius: 5px;
-    padding: 20px 30px;
-    width: 80%;
-  }
-  main .instruction h3 {
-    font-size: unset;
-  }
-  main .instruction ul {
-    font-size: unset;
-    line-height: 20px;
   }
 }

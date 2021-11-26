@@ -99,6 +99,22 @@ main .instruction p {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  main .instruction {
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 20px 30px;
+    width: 80%;
+  }
+  main .instruction h3 {
+    font-size: unset;
+  }
+  main .instruction ul {
+    font-size: unset;
+    line-height: 25px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   main .instruction {
     margin-top: 200px;

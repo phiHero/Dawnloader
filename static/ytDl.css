@@ -5,9 +5,13 @@
 .downloader button {
   background-color: red;
 }
-main .instruction {
-  background: rgb(255, 216, 216);
-  padding: 20px 30px;
-  border: 2px solid red;
-  border-radius: 5px;
+@media screen and (max-width: 600px) {
+  main .instruction {
+    margin-top: 50px;
+    background: rgb(255, 216, 216);
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 20px 30px;
+    width: 80%;
+  }
 }

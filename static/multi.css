@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "IBM Plex Sans", sans-serif;
 }
+body {
+  background-color: rgba(255, 255, 255, 0.973);
+}
 header {
   height: 50px;
   display: flex;
@@ -69,28 +72,49 @@ main .image button {
   padding: 0;
   opacity: 1;
 }
+
 main .instruction {
-  display: none;
-  width: 80%;
-  margin-top: 50px;
+  width: 50%;
+  margin-top: 225px;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
+  background-color: white;
+  padding: 20px 35px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #c7c7c7;
+}
+main .instruction h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 25px;
 }
 main .instruction ul {
   line-height: 30px;
+  text-align: left;
+  font-size: 20px;
+  color: #333;
+  margin-left: 20px;
 }
-@media screen and (max-width: 600px) {
+main .instruction p {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1400px) {
   main .instruction {
-    display: block;
+    margin-top: 200px;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1200px) {
+  main .instruction {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1300px) {
   .downloader input {
     width: 35%;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .downloader input {
     width: 65%;
   }

@@ -6,9 +6,12 @@
   background-color: #1877f2;
 }
 
+main .instruction {
+  background: #c3ddff;
+  border: 2px solid #1877f2;
+}
 @media screen and (max-width: 600px) {
   main .instruction {
-    background: #c3ddff;
-    border: 2px solid #1877f2;
+    margin-top: 50px;
   }
 }

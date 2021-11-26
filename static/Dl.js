@@ -6,7 +6,7 @@ Dbutton.disabled = true;
 Dbutton.onclick = () => {
   setTimeout(function () {
     inputBox.value = "";
-  }, 2000);
+  }, 1000);
 };
 
 inputBox.onkeydown = () => {

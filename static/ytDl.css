@@ -5,9 +5,12 @@
 .downloader button {
   background-color: red;
 }
+main .instruction {
+  background: rgb(255, 216, 216);
+  border: 2px solid red;
+}
 @media screen and (max-width: 600px) {
   main .instruction {
-    background: rgb(255, 216, 216);
-    border: 2px solid red;
+    margin-top: 50px;
   }
 }

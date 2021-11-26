@@ -80,8 +80,7 @@ main .instruction {
   margin-right: auto;
   background-color: white;
   padding: 20px 35px 10px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px #c7c7c7;
+  border-radius: 5px;
 }
 main .instruction h3 {
   text-align: center;
@@ -101,8 +100,6 @@ main .instruction p {
 
 @media screen and (max-width: 600px) {
   main .instruction {
-    margin-top: 50px;
-    border-radius: 5px;
     padding: 20px 30px;
     width: 80%;
   }

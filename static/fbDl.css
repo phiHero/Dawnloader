@@ -15,4 +15,11 @@
     padding: 20px 30px;
     width: 80%;
   }
+  main .instruction h3 {
+    font-size: unset;
+  }
+  main .instruction ul {
+    font-size: unset;
+    line-height: 20px;
+  }
 }

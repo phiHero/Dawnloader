@@ -100,8 +100,8 @@
   .main__wrapper {
     position: relative;
   }
-  .main__box {
-    padding-top: 100px;
+  .header {
+    margin-bottom: 100px;
   }
   .main__name {
     font-size: 45px;

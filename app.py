@@ -4,7 +4,7 @@ from pytube import YouTube
 from io import BytesIO
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "654c0fb3968af9d5e6a9b3edcbc7051b"
+app.config['SECRET_KEY'] = "b'\x92aU\xc6\x15A\x0f\xf0\xcfo\xe6\xd2\x0cw030\xb5\xe0O\x85\xef\x9fR'"
 
 
 @app.route('/terms-conditions')

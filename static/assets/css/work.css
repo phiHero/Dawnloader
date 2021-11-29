@@ -148,22 +148,23 @@
   #fp-nav ul li a,
   .fp-slidesNav ul li a {
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 18px;
   }
   #fp-nav ul li a span,
   .fp-slidesNav ul li a span {
     width: 40px;
+    height: 4px;
   }
   #fp-nav ul li a.active span,
   .fp-slidesNav ul li a.active span,
   #fp-nav ul li:hover a.active span,
   .fp-slidesNav ul li:hover a.active span {
-    height: 6px;
+    height: 4px;
     width: 70px;
   }
   #fp-nav {
     top: unset;
-    bottom: 10%;
+    bottom: 7%;
   }
   .header__name {
     font-size: 20px;

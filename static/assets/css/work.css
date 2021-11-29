@@ -101,7 +101,7 @@
     position: relative;
   }
   .main__box {
-    margin-top: 100px;
+    padding-top: 100px;
   }
   .main__name {
     font-size: 45px;

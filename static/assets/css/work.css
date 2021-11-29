@@ -101,7 +101,7 @@
     position: relative;
   }
   .header {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
   .main__name {
     font-size: 45px;
@@ -164,7 +164,7 @@
   }
   #fp-nav {
     top: unset;
-    bottom: 7%;
+    bottom: 5%;
   }
   .header__name {
     font-size: 20px;
@@ -198,26 +198,18 @@
   .wrapper,
   .instruction {
     left: 51%;
-    top: 51%;
+    top: 46%;
     width: 350px;
   }
   .instruction li {
     font-size: 22px;
   }
 }
-@media screen and (max-width: 455px) {
-  .wrapper,
-  .instruction {
-    left: 52%;
-    top: 52%;
-    width: 350px;
-  }
-}
 @media screen and (max-width: 400px) {
   .wrapper,
   .instruction {
     left: 53.5%;
-    top: 53.5%;
+    top: 47%;
     width: 350px;
   }
   .header__icon {

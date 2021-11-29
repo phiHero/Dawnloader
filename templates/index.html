@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="Ken">
+  <head>
+    <meta charet="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.typekit.net/yny2znm.css" />
+
+    <script src="https://kit.fontawesome.com/016ce68e35.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--<link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'assets/css/animate.css') }}"
+    />-->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'assets/css/fullpage.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'assets/css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'assets/css/work.css') }}"
+    />
+
+    <title>Youtube & Facebook video Downloader</title>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="" class="header__name">YF Downloader</a>
+        </div>
+
+        <div class="header__box">
+          <a href="" class="header__icon">Terms and conditions</a>
+          <div class="header__btn">
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__globalNav"></ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="loader" class="header__loader"></div>
+    </header>
+
+    <div id="fullPage">
+      <section id="s1" class="main section s1">
+        <div class="main__wrapper">
+          <div class="main__box">
+            <h1 class="main__name">
+              <span style="color: #ff4d5a">Y</span>ou<span
+                style="color: #ff4d5a"
+                >t</span
+              >ube<br />Downloader
+            </h1>
+            <span class="main__underBar"></span>
+            <p class="main__info">
+              Download video /<br />
+              audio.
+            </p>
+          </div>
+
+          <div class="wrapper">
+            <p id="enterurl">
+              <i class="fas fa-link"></i> Enter video url here:
+            </p>
+
+            <form method="POST">
+              <div class="container">
+                <div>
+                  <input
+                    id="input1"
+                    type="text"
+                    name="url"
+                    class="input1"
+                    placeholder="Paste your link here..."
+                  />
+                </div>
+              </div>
+              <p id="terms">
+                By clicking "Download", you agree with
+                <a href="/terms-conditions">Terms and conditions</a>.
+              </p>
+              <div>
+                <button
+                  id="button1"
+                  type="submit"
+                  name="submit_video"
+                  value="submit_video"
+                >
+                  <i class="fas fa-download"></i> Download
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="s2" class="main section s2">
+        <div class="main__wrapper">
+          <div class="main__box">
+            <h1 class="main__name">
+              <span style="color: #1877f2">F</span>ace<span
+                style="color: #1877f2"
+                >b</span
+              >ook<br />Downloader
+            </h1>
+
+            <span class="main__underBar2"></span>
+
+            <p class="main__info">
+              High resolution /<br />
+              convenient.
+            </p>
+          </div>
+
+          <div class="wrapper">
+            <p id="enterurl">
+              <i class="fas fa-link"></i> Enter video url here:
+            </p>
+
+            <form action="/download" method="post">
+              <div class="container">
+                <div>
+                  <input
+                    style="border: 3px solid #1877f2"
+                    id="input2"
+                    type="text"
+                    name="url1"
+                    placeholder="Paste your link here..."
+                  />
+                </div>
+              </div>
+              <p id="terms">
+                By clicking "Download", you agree with
+                <a style="color: #1877f2" href="/terms-conditions"
+                  >Terms and conditions</a
+                >.
+              </p>
+              <div>
+                <button
+                  style="background-color: #1877f2"
+                  id="button2"
+                  type="submit"
+                >
+                  <i class="fas fa-download"></i> Download
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="s3" class="main section s3">
+        <div class="main__wrapper">
+          <div class="main__box">
+            <h1 class="main__name">How-to<br />Use</h1>
+
+            <span class="main__underBar3"></span>
+
+            <p class="main__info">Simple-fast /<br />easy.</p>
+          </div>
+          <div class="instruction">
+            <p id="pp">Instruction</p>
+            <div class="step1">
+              <li class="animated_text1" id="animated_text_div1">
+                Step-1:
+                <span id="b1span">Copy video url.</span>
+              </li>
+            </div>
+            <div class="step2">
+              <li class="animated_text2" id="animated_text_div2">
+                Step-2:
+                <span id="b2span">Paste url in the box above.</span>
+              </li>
+            </div>
+            <div class="step3">
+              <li class="animated_text3" id="animated_text_div3">
+                Step-3: <span>Press "Download". </span></li>
+              </div>
+               <p id="enjoy">Enjoy !</p>
+               <p id="cre">@By Phi_hung</p>
+            </div>         
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js"
+      integrity="sha256-e13jRNqOX98m6UAwI/yZTpcDseJtA8s86yfFs4Sqrv8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="{{ url_for('static', filename = 'assets/js/anime.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'assets/js/fullpage.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename = 'assets/js/easing.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'assets/js/scroll.js') }}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

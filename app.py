@@ -4,7 +4,7 @@ from pytube import YouTube
 from io import BytesIO
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "b'\x92aU\xc6\x15A\x0f\xf0\xcfo\xe6\xd2\x0cw030\xb5\xe0O\x85\xef\x9fR'"
+app.config['SECRET_KEY'] = "b'\x9d\x8a\x0fD\x04\x02\xda\xc7\xff\x9e\x0e\x9a\x15\xe0\x81\x87]\x06j\xab\x86\x99 G'"
 
 
 @app.route('/terms-conditions')
@@ -22,7 +22,7 @@ def home():
         except:
             return render_template("error.html")
         return render_template("ytdownload.html", url = url)
-    return render_template("ytDl.html")
+    return render_template("index.html")
 
 @app.route("/ytdownload", methods = ["GET", "POST"])
 def download_video():
@@ -46,19 +46,12 @@ def download_video():
 
 
 """FB"""
-@app.route("/fb", methods=["GET", "POST"])
-def facebook_downloader():
-    if request.method == "GET":
-        return render_template("fbDl.html")
-    else:
-        if not request.form["url1"]:
-            return redirect("/fb")
 								
 @app.route('/download', methods=["POST", "GET"])
 def download():
 	if request.method == "POST":
 			if not request.form["url1"]:
-				return redirect("/fb")
+				return redirect("/")
 			url1 = request.form["url1"]
 			if "http" and "f" and "b" not in url1:
 				return render_template("error.html")

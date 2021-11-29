@@ -1,0 +1,226 @@
+.wrapper {
+  width: 500px;
+  height: 500px;
+  margin-top: 16%;
+  margin-right: 100px;
+  text-align: center;
+}
+.wrapper #enterurl {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 8px;
+}
+.wrapper input {
+  background-color: white;
+  width: 100%;
+  padding: 20px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 3px solid #ff4d5a;
+  font-size: 16px;
+}
+.wrapper #terms {
+  color: white;
+  font-size: 10px;
+  margin: 8px 0px 8px 10px;
+}
+.wrapper a {
+  color: #ff4d5a;
+}
+.wrapper button {
+  color: white;
+  background-color: #ff4d5a;
+  padding: 12px 24px 12px 23px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: margin-top 0.3s linear;
+}
+.wrapper button:hover {
+  margin-top: 5px;
+}
+.wrapper p {
+  text-align: left;
+}
+.instruction {
+  width: 600px;
+  height: 800px;
+  margin-top: 15%;
+  margin-right: 100px;
+  color: white;
+
+  font-weight: 300;
+  text-align: left;
+}
+.instruction #pp {
+  font-size: 40px;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #ff4d5a, #1877f2);
+  background-size: 70% 3px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+.instruction li {
+  font-size: 30px;
+  margin-left: 20px;
+  opacity: 0.95;
+  transition: margin-left 0.5s;
+}
+.instruction li:hover {
+  margin-left: 40px;
+}
+.instruction #enjoy {
+  font-size: 25px;
+  margin-top: 10px;
+  animation: enjoy 5s infinite;
+  margin-left: 30%;
+}
+.instruction #cre {
+  font-size: 8px;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+@keyframes enjoy {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main__wrapper {
+    position: relative;
+  }
+  .main__box {
+    margin-top: 100px;
+  }
+  .main__name {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 0px;
+  }
+  .main__underBar::before,
+  .main__underBar2::before,
+  .main__underBar3::before {
+    width: 60px;
+    top: 20px;
+  }
+  .main__underBar::after,
+  .main__underBar2::after,
+  .main__underBar3::after {
+    width: 60px;
+    top: 30px;
+    left: 35px;
+  }
+  .main__info {
+    display: none;
+  }
+  .wrapper {
+    position: absolute;
+    width: 375px;
+    height: 80vh;
+    text-align: center;
+    margin-top: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .wrapper input {
+    padding: 15px 10px;
+  }
+  .wrapper button {
+    padding: 10px 14px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .wrapper #enterurl {
+    font-size: 16px;
+  }
+  #fp-nav ul li a,
+  .fp-slidesNav ul li a {
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+    width: 40px;
+  }
+  #fp-nav ul li a.active span,
+  .fp-slidesNav ul li a.active span,
+  #fp-nav ul li:hover a.active span,
+  .fp-slidesNav ul li:hover a.active span {
+    height: 6px;
+    width: 70px;
+  }
+  #fp-nav {
+    top: unset;
+    bottom: 10%;
+  }
+  .header__name {
+    font-size: 20px;
+  }
+  .header__icon {
+    font-size: 16px;
+    margin-top: 4px;
+    margin-right: 5px;
+  }
+  .instruction li {
+    font-size: 25px;
+  }
+  .instruction {
+    position: absolute;
+    width: 375px;
+    height: 80vh;
+    text-align: left;
+    margin-top: 45%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .instruction #pp {
+    font-size: 30px;
+  }
+  .instruction #cre {
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .wrapper,
+  .instruction {
+    left: 51%;
+    top: 51%;
+    width: 350px;
+  }
+  .instruction li {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .wrapper,
+  .instruction {
+    left: 52%;
+    top: 52%;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .wrapper,
+  .instruction {
+    left: 53.5%;
+    top: 53.5%;
+    width: 350px;
+  }
+  .header__icon {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+}

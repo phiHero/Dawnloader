@@ -249,6 +249,11 @@
     width: 60px;
     left: 35px;
   }
+  .header__icon {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-right: 0px;
+  }
 }
 @media screen and (max-width: 400px) {
   .wrapper,

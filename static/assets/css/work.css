@@ -249,13 +249,13 @@
     width: 60px;
     left: 35px;
   }
-}
-@media screen and (max-width: 410px) {
   .main__box {
     position: absolute;
-    left: 15px;
+    left: 0px;
     top: -2%;
   }
+}
+@media screen and (max-width: 400px) {
   .wrapper,
   .instruction {
     left: 53.5%;

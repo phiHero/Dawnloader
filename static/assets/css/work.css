@@ -118,7 +118,6 @@
 }
 @media screen and (max-width: 700px) {
   .main__wrapper {
-    position: relative;
     height: max-content;
   }
   .header {
@@ -218,8 +217,8 @@
 @media screen and (max-width: 455px) {
   .main__box {
     position: absolute;
-    left: 32.725px;
-    top: 10%;
+    top: -450px;
+    left: 0px;
   }
   .wrapper,
   .instruction {
@@ -249,11 +248,6 @@
   .main__underBar3::after {
     width: 60px;
     left: 35px;
-  }
-  .main__box {
-    position: absolute;
-    left: 0px;
-    top: -2%;
   }
 }
 @media screen and (max-width: 400px) {

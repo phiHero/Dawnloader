@@ -254,7 +254,7 @@
   .main__box {
     position: absolute;
     left: 15px;
-    top: 2%;
+    top: -2%;
   }
   .wrapper,
   .instruction {

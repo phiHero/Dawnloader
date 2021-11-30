@@ -123,10 +123,6 @@
   .header {
     top: 100%;
   }
-  .main__box {
-    top: unset;
-    margin-top: 100px;
-  }
   .main__name {
     font-size: 65px;
     line-height: 60px;
@@ -219,6 +215,11 @@
   }
 }
 @media screen and (max-width: 455px) {
+  .main__box {
+    position: absolute;
+    left: 32.725px;
+    top: 10%;
+  }
   .wrapper,
   .instruction {
     left: 51%;
@@ -249,7 +250,12 @@
     left: 35px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 410px) {
+  .main__box {
+    position: absolute;
+    left: 15px;
+    top: 2%;
+  }
   .wrapper,
   .instruction {
     left: 53.5%;

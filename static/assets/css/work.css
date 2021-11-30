@@ -119,6 +119,7 @@
 @media screen and (max-width: 700px) {
   .main__wrapper {
     position: relative;
+    height: max-content;
   }
   .header {
     top: 100%;

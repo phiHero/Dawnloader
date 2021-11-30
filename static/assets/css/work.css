@@ -124,7 +124,8 @@
     top: 100%;
   }
   .main__box {
-    top: 15%;
+    top: unset;
+    margin-top: 100px;
   }
   .main__name {
     font-size: 65px;

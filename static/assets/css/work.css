@@ -117,9 +117,6 @@
   }
 }
 @media screen and (max-width: 700px) {
-  .main__wrapper {
-    height: max-content;
-  }
   .header {
     top: 100%;
   }
@@ -215,6 +212,9 @@
   }
 }
 @media screen and (max-width: 455px) {
+  .main__wrapper {
+    height: max-content;
+  }
   .main__box {
     position: absolute;
     top: -385px;
@@ -265,5 +265,14 @@
   .header__icon {
     font-size: 14px;
     margin-top: 6px;
+  }
+}
+@media screen and (max-height: 710px) {
+  .main__box {
+    top: -235px;
+  }
+  .wrapper,
+  .instruction {
+    top: 30%;
   }
 }

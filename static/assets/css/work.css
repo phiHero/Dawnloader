@@ -122,7 +122,9 @@
   }
   .header {
     top: 100%;
-    margin-bottom: 35px;
+  }
+  .main__box {
+    top: 15%;
   }
   .main__name {
     font-size: 65px;

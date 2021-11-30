@@ -217,7 +217,7 @@
 @media screen and (max-width: 455px) {
   .main__box {
     position: absolute;
-    top: -400px;
+    top: -385px;
     left: 0px;
   }
   .wrapper,

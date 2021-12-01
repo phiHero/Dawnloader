@@ -119,6 +119,7 @@
 @media screen and (max-width: 700px) {
   .header {
     top: 100%;
+    margin-bottom: 50px;
   }
   .main__name {
     font-size: 65px;

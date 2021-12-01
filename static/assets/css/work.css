@@ -218,17 +218,17 @@
 
 @media screen and (max-width: 600px) {
   .wrapper {
-    top: 76%;
+    top: 78%;
   }
 }
 @media screen and (max-width: 550px) {
   .wrapper {
-    top: 75%;
+    top: 77%;
   }
 }
 @media screen and (max-width: 500px) {
   .wrapper {
-    top: 74%;
+    top: 76%;
   }
 }
 @media screen and (max-width: 455px) {
@@ -267,6 +267,6 @@
   }
   .wrapper {
     margin: unset;
-    top: 70%;
+    top: 72%;
   }
 }

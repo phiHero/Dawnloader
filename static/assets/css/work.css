@@ -188,7 +188,7 @@
   }
   #fp-nav {
     top: unset;
-    bottom: 4%;
+    bottom: 3.5%;
   }
   .header__name {
     font-size: 20px;
@@ -267,6 +267,6 @@
   }
   .wrapper {
     margin: unset;
-    top: 70%;
+    top: 68%;
   }
 }

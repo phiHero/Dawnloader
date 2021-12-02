@@ -89,10 +89,10 @@
   20% {
     opacity: 0.8;
   }
-  40% {
+  30% {
     opacity: 1;
   }
-  60% {
+  70% {
     opacity: 1;
   }
   80% {
@@ -175,7 +175,7 @@
   #fp-nav ul li a,
   .fp-slidesNav ul li a {
     text-decoration: none;
-    margin-top: 17px;
+    margin-top: 16px;
   }
   #fp-nav ul li a span,
   .fp-slidesNav ul li a span {
@@ -191,7 +191,7 @@
   }
   #fp-nav {
     top: unset;
-    bottom: 3.5%;
+    bottom: 3%;
   }
   .header__name {
     font-size: 20px;

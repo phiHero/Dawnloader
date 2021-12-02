@@ -128,7 +128,7 @@
   }
   .main__box {
     position: relative;
-    top: 5%;
+    top: 4%;
   }
   .main__name {
     font-size: 65px;
@@ -218,17 +218,17 @@
 
 @media screen and (max-width: 600px) {
   .wrapper {
-    top: 78%;
+    top: 80%;
   }
 }
 @media screen and (max-width: 550px) {
   .wrapper {
-    top: 77%;
+    top: 79%;
   }
 }
 @media screen and (max-width: 500px) {
   .wrapper {
-    top: 76%;
+    top: 78%;
   }
 }
 @media screen and (max-width: 455px) {
@@ -267,6 +267,6 @@
   }
   .wrapper {
     margin: unset;
-    top: 72%;
+    top: 71%;
   }
 }

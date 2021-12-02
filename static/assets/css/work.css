@@ -275,4 +275,7 @@
   .wrapper button {
     margin-top: 8px;
   }
+  .wrapper input {
+    padding: 13px 10px;
+  }
 }

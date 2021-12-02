@@ -128,7 +128,7 @@
   }
   .main__box {
     position: relative;
-    top: 2%;
+    top: 1.5%;
   }
   .main__name {
     font-size: 65px;
@@ -188,7 +188,7 @@
   }
   #fp-nav {
     top: unset;
-    bottom: 5%;
+    bottom: 4%;
   }
   .header__name {
     font-size: 20px;
@@ -267,6 +267,6 @@
   }
   .wrapper {
     margin: unset;
-    top: 71%;
+    top: 70%;
   }
 }

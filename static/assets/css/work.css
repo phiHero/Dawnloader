@@ -130,8 +130,8 @@
     height: 100%;
   }
   .main__box {
-    position: relative;
-    top: 1.5%;
+    margin-top: 15.5%;
+    top: unset;
   }
   .main__name {
     font-size: 65px;
@@ -155,9 +155,7 @@
   }
   .wrapper {
     margin: unset;
-    position: absolute;
     width: 80%;
-    text-align: center;
     top: 72.5%;
     left: 50%;
   }

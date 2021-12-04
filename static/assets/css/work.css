@@ -141,20 +141,20 @@
   .main__underBar2::before,
   .main__underBar3::before {
     width: 75px;
-    top: 20px;
+    top: 18px;
   }
   .main__underBar::after,
   .main__underBar2::after,
   .main__underBar3::after {
     width: 75px;
-    top: 30px;
+    top: 28px;
     left: 50px;
   }
   .main__info {
     display: none;
   }
   .wrapper {
-    top: 35%;
+    top: 34.5%;
     width: 80%;
     margin: unset;
     height: unset;

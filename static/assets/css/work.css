@@ -154,7 +154,10 @@
     display: none;
   }
   .wrapper {
-    margin: unset;
+    margin-top: 30px;
+    margin-left: unset;
+    margin-bottom: unset;
+    margin-right: unset;
     width: 80%;
     top: 72.5%;
     left: 50%;

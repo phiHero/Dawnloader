@@ -135,7 +135,7 @@
   }
   .main__name {
     font-size: 65px;
-    line-height: 60px;
+    line-height: 58px;
   }
   .main__underBar::before,
   .main__underBar2::before,
@@ -154,7 +154,7 @@
     display: none;
   }
   .wrapper {
-    margin-top: 35%;
+    margin-top: 34%;
     width: 80%;
     left: 50%;
   }

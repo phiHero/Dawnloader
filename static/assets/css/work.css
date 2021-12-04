@@ -154,9 +154,10 @@
     display: none;
   }
   .wrapper {
-    top: 70%;
+    top: 35%;
     width: 80%;
     margin: unset;
+    height: unset;
   }
   .wrapper input {
     padding: 15px 10px;

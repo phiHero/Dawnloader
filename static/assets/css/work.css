@@ -173,7 +173,7 @@
   #fp-nav ul li a,
   .fp-slidesNav ul li a {
     text-decoration: none;
-    margin-top: 16px;
+    margin-top: 14px;
   }
   #fp-nav ul li a span,
   .fp-slidesNav ul li a span {
@@ -189,7 +189,7 @@
   }
   #fp-nav {
     top: unset;
-    bottom: 3%;
+    bottom: 2%;
   }
   .header__name {
     font-size: 20px;

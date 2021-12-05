@@ -136,13 +136,13 @@
   .main__underBar2::before,
   .main__underBar3::before {
     width: 75px;
-    top: 16px;
+    top: 14px;
   }
   .main__underBar::after,
   .main__underBar2::after,
   .main__underBar3::after {
     width: 75px;
-    top: 26px;
+    top: 24px;
     left: 50px;
   }
   .main__info {

@@ -154,7 +154,7 @@
     display: none;
   }
   .wrapper {
-    top: 34.5%;
+    top: 37%;
     width: 80%;
     margin: unset;
     height: unset;
@@ -249,6 +249,9 @@
     position: absolute;
     top: 30px;
     left: 20px;
+  }
+  .wrapper {
+    top: 34.5%;
   }
   .wrapper button {
     margin-top: 8px;

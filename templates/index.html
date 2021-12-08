@@ -68,7 +68,7 @@
               <i class="fas fa-link"></i> Enter video url:
             </p>
 
-            <form method="POST">
+            <form id="inputForm1" method="POST">
               <div class="container">
                 <div>
                   <input
@@ -90,6 +90,7 @@
                   type="submit"
                   name="submit_video"
                   value="submit_video"
+                  disabled="disabled"
                 >
                   <i class="fas fa-download"></i> Download
                 </button>
@@ -122,7 +123,7 @@
               <i class="fas fa-link"></i> Enter video url:
             </p>
 
-            <form action="/download" method="post">
+            <form id="inputForm2" action="/download" method="post">
               <div class="container">
                 <div>
                   <input
@@ -145,6 +146,7 @@
                   style="background-color: #1877f2"
                   id="button2"
                   type="submit"
+                  disabled="disabled"
                 >
                   <i class="fas fa-download"></i> Download
                 </button>

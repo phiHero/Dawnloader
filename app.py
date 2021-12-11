@@ -11,6 +11,7 @@ app.config['SECRET_KEY'] = "b'\x9d\x8a\x0fD\x04\x02\xda\xc7\xff\x9e\x0e\x9a\x15\
 def terms():
 	return render_template('terms-conditions.html')
 
+
 """YT"""
 @app.route("/", methods = ["GET", "POST"])
 def home():
@@ -43,7 +44,9 @@ def download_video():
     return redirect(url_for("home"))
 
 
-
+@app.route('/indexing')
+def back():
+	return redirect(url_for("home"))
 
 """FB"""
 								

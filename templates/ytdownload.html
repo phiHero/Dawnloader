@@ -25,12 +25,20 @@
       body{
         background-color: #061e3c;
       }
+      header button{
+        margin: 20px 0 75px 30px;
+        background-color: #ff4d5a;
+        color: white;
+        font-size: 14px;
+        padding: 4px 18px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
       .webName .webname3 {
         font-size: 25px;
         margin-left: 20px;
-        margin-bottom: 120px;
+        margin-bottom: 30px;
         font-weight: 400;
-        margin-top: 20px;
       }
       .wrapper {
         text-align: center;
@@ -84,27 +92,32 @@
     width: 375px;
     height: 250px;
   }
-   .wrapper .container .video_info img {
+  .wrapper .container .video_info img {
         width: 175px;;
       }
-        .wrapper .container .bs {
+  .wrapper .container .bs {
           position: unset;
           margin-top: 20px;
       }
+  header button{
+    margin-bottom: 45px;
+  }
 }
     </style>
   </head>
   {% block content %}
   <body>
     <header>
-      <div class="webName">
-        <p style="color: white;" class="webname3">
-          <i style="color: #ff4d5a; font-size: 25px">YT</i> Downloader
-        </p>
-      </div>
+     <form action="/indexing" method="get">
+       <button type="submit">Back</button>
+     </form>
     </header>
 
-    <div class="wrapper">
+    <div class="wrapper"> <div class="webName">
+        <p style="color: white;" class="webname3">
+          <span style="color: #ff4d5a; font-size: 25px">YT</span> Downloader
+        </p>
+      </div>
       <div class="container">
       <form method="POST" action="{{ url_for('download_video') }}">
         <div class="video_info">

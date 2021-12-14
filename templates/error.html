@@ -1,8 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <body style="text-align: center">
-    <h1 class="center-align">CÓ lỗi xảy ra trong khi download!</h1>
-    <h4 class="center-align">Hãy thử kiểm tra link download.</h4>
-    <h5 class="center-align">Nhấn nút quay lại để quay lại trang.</h5>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      line-height: 10px;
+    "
+  >
+    <div style="max-height: 250px; overflow: hidden">
+      <img
+        width="300px"
+        src="{{ url_for('static', filename = 'assets/image/error.jpg') }}"
+        alt=""
+      />
+    </div>
+    <h3 style="margin: none">There is an error in downloading the video!</h3>
+    <h4>Please check your video link and try again.</h4>
+    <form action="/indexing" method="get">
+      <button
+        style="
+          background-color: rgb(255, 110, 110);
+          color: white;
+          padding: 8px 20px;
+          font-size: 16px;
+          border-radius: 16px;
+          border: none;
+          cursor: pointer;
+          margin-top: 6px;
+        "
+        type="submit"
+      >
+        Turn back
+      </button>
+    </form>
   </body>
 </html>

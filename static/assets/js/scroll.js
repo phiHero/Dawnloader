@@ -16,7 +16,7 @@ const inputForm2 = document.getElementById("inputForm2");
 Dbutton.onclick = () => {
   setTimeout(function () {
     inputBox.value = "";
-  }, 1250);
+  }, 1500);
 };
 
 inputForm1.addEventListener("input", () => {
@@ -30,7 +30,7 @@ inputForm1.addEventListener("input", () => {
 Dbutton2.onclick = () => {
   setTimeout(function () {
     inputBox2.value = "";
-  }, 1250);
+  }, 1500);
 };
 
 inputForm2.addEventListener("input", () => {

@@ -53,19 +53,35 @@ def back():
 @app.route('/download', methods=["POST", "GET"])
 def download():
 	if request.method == "POST":
-			if not request.form["url1"]:
-				return redirect("/")
-			url1 = request.form["url1"]
-			if "http" and "f" and "b" not in url1:
-				return render_template("error.html")
-			else:
-				with youtube_dl.YoutubeDL() as ydl:
-					url1 = ydl.extract_info(url1, download=False)
-					try:
-						download_link = url1["entries"][-1]["formats"][-1]["url"]
-					except:
-						download_link = url1["formats"][-1]["url"]
-					return redirect(download_link+"&dl=1")
+                session['link2'] = request.form.get('url1')
+                url1 = session['link2']
+                if "http" and "f" and "b" not in url1:
+                    return render_template("error.html")
+                else:
+                                return render_template("fbdl.html",url1=url1)
+
+@app.route('/configure', methods=["POST", "GET"])
+def configure():
+                    url1 = session['link2']
+                    with youtube_dl.YoutubeDL() as ydl:
+                                        url1 = ydl.extract_info(url1, download=False)
+                                        configure = request.form.get("vid_type")
+                                        if configure =='sd':
+                                            try:
+                                                download_link = url1["entries"][-1]["formats"][-2]["url"]
+                                            except:
+                                                download_link = url1["formats"][-2]["url"]
+                                        elif configure =='hd':
+                                            try:
+                                                download_link = url1["entries"][-1]["formats"][-1]["url"]
+                                            except:
+                                                download_link = url1["formats"][-1]["url"]
+                                        else:
+                                            try:
+                                                download_link = url1["entries"][-1]["formats"][0]["url"]
+                                            except:
+                                                download_link = url1["formats"][0]["url"]
+                                        return redirect(download_link+"&dl=1")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e9b68f2ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+      body {
+        background-color: #061e3c;
+      }
+      header button {
+        margin: 20px 0 75px 30px;
+        background-color: #1877f2;
+        color: white;
+        font-size: 14px;
+        padding: 4px 18px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .webName .webname3 {
+        font-size: 25px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        font-weight: 400;
+      }
+      .wrapper {
+        text-align: center;
+      }
+      .wrapper .container {
+        margin: auto;
+        width: 600px;
+        height: 199px;
+        border: 5px outset #1877f2;
+        position: relative;
+        padding-right: 10px;
+        border-radius: 5px;
+        background-color: white;
+      }
+      .wrapper .container .video_info {
+        display: flex;
+      }
+      .wrapper .container .video_info img {
+        width: 250px;
+        border: 2px rgb(43, 42, 42) solid;
+      }
+      .wrapper .container .video_info h3 {
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .wrapper .container .bs {
+        position: absolute;
+        left: 250px;
+        top: 80px;
+        margin-left: 20px;
+      }
+      .wrapper .container .bs select {
+        width: 300px;
+        padding: 5px 0 5px 7px;
+        font-size: 15px;
+        border-radius: 2px;
+      }
+      .wrapper .container .bs button {
+        margin-top: 10px;
+        background-color: #1877f2;
+        font-size: 15px;
+        color: white;
+        border: 1px groove gray;
+        padding: 5px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      @media screen and (max-width: 800px) {
+        .wrapper .container {
+          width: 375px;
+          height: 250px;
+        }
+        .wrapper .container .video_info img {
+          width: 175px;
+        }
+        .wrapper .container .bs {
+          position: unset;
+          margin-top: 20px;
+        }
+        header button {
+          margin-bottom: 45px;
+        }
+      }
+    </style>
+  </head>
+  {% block content %}
+  <body>
+    <header>
+      <form action="/indexing" method="get">
+        <button type="submit">Back</button>
+      </form>
+    </header>
+
+    <div class="wrapper">
+      <div class="webName">
+        <p style="color: white" class="webname3">
+          <span style="color: #1877f2; font-size: 25px">FB</span> Downloader
+        </p>
+      </div>
+      <div class="container">
+        <form method="post" action="/configure">
+          <div class="video_info"></div>
+          <div class="bs">
+            <select name="vid_type">
+              <option value="sd">Mp4: SD</option>
+              <option value="hd">Mp4: HD</option>
+              <option value="mp3">Audio</option>
+            </select>
+            <div>
+              <button type="submit" name="action">Download</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  {% endblock content%}
+</html>

@@ -25,14 +25,16 @@
       body{
         background-color: #061e3c;
       }
-      header button{
-        margin: 20px 0 75px 30px;
-        background-color: #ff4d5a;
+      header {
+        margin-top: 20px;
+        margin-bottom: 35px;
+      }
+      header a {
+        text-decoration: none;
         color: white;
-        font-size: 14px;
-        padding: 4px 18px;
-        border-radius: 5px;
-        cursor: pointer;
+        opacity: 0.6;
+        font-size: 40px;
+        margin-left: 30px;
       }
       .webName .webname3 {
         font-size: 25px;
@@ -108,9 +110,7 @@
   {% block content %}
   <body>
     <header>
-     <form action="/indexing" method="get">
-       <button type="submit">Back</button>
-     </form>
+      <a href="/indexing"><i class="fas fa-arrow-circle-left"></i></a>
     </header>
 
     <div class="wrapper"> <div class="webName">

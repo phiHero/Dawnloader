@@ -25,14 +25,16 @@
       body {
         background-color: #061e3c;
       }
-      header button {
-        margin: 20px 0 75px 30px;
-        background-color: #1877f2;
+      header {
+        margin-top: 20px;
+        margin-bottom: 35px;
+      }
+      header a {
+        text-decoration: none;
         color: white;
-        font-size: 14px;
-        padding: 4px 18px;
-        border-radius: 5px;
-        cursor: pointer;
+        opacity: 0.6;
+        font-size: 40px;
+        margin-left: 30px;
       }
       .webName .webname3 {
         font-size: 25px;
@@ -58,12 +60,12 @@
       }
       .wrapper .container .video_info img {
         width: 250px;
-        border: 2px rgb(43, 42, 42) solid;
+        border: 1px rgb(43, 42, 42) solid;
       }
       .wrapper .container .video_info h3 {
         text-align: left;
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: 20px;
+        margin-top: 15px;
       }
       .wrapper .container .bs {
         position: absolute;
@@ -99,8 +101,11 @@
           position: unset;
           margin-top: 20px;
         }
-        header button {
-          margin-bottom: 45px;
+        header {
+          margin-top: 5px;
+        }
+        header a {
+          margin-left: 5px;
         }
       }
     </style>
@@ -108,9 +113,7 @@
   {% block content %}
   <body>
     <header>
-      <form action="/indexing" method="get">
-        <button type="submit">Back</button>
-      </form>
+      <a href="/indexing"><i class="fas fa-arrow-circle-left"></i></a>
     </header>
 
     <div class="wrapper">
@@ -121,7 +124,13 @@
       </div>
       <div class="container">
         <form method="post" action="/configure">
-          <div class="video_info"></div>
+          <div class="video_info">
+            <img
+              src="{{ url_for('static', filename = 'assets/image/OIP.jpg') }}"
+              alt=""
+            />
+            <h3>No title</h3>
+          </div>
           <div class="bs">
             <select name="vid_type">
               <option value="sd">Mp4: SD</option>

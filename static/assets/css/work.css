@@ -186,7 +186,7 @@
   }
   .instruction #video {
     width: 350px;
-    height: 175px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 455px) {

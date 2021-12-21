@@ -184,6 +184,10 @@
     left: 10%;
     margin: unset;
   }
+  .instruction #video {
+    width: 350px;
+    height: 175px;
+  }
 }
 @media screen and (max-width: 455px) {
   .instruction li {

@@ -52,38 +52,19 @@
   margin-top: 15%;
   margin-right: 100px;
   color: white;
-
   font-weight: 300;
-  text-align: left;
+  text-align: center;
 }
-.instruction #pp {
-  font-size: 40px;
-  margin-bottom: 30px;
-  background: linear-gradient(90deg, #ff4d5a, #1877f2);
-  background-size: 70% 3px;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-}
-.instruction li {
-  font-size: 30px;
-  margin-left: 20px;
-  opacity: 0.95;
-  transition: margin-left 0.5s;
-}
-.instruction li:hover {
-  margin-left: 40px;
+.instruction #video {
+  width: 500px;
+  height: 300px;
+  border: 3px solid rgb(3, 2, 43);
+  border-radius: 5px;
 }
 .instruction #enjoy {
   font-size: 25px;
   margin-top: 20px;
   animation: enjoy 5s infinite;
-  margin-left: 30%;
-}
-.instruction #cre {
-  font-size: 8px;
-  text-align: right;
-  margin-top: 10px;
-  margin-right: 150px;
 }
 @keyframes enjoy {
   0% {
@@ -129,6 +110,7 @@
   .main__name {
     font-size: 65px;
     line-height: 58px;
+    letter-spacing: 3px;
   }
   .main__underBar::before,
   .main__underBar2::before,
@@ -198,16 +180,9 @@
     position: absolute;
     /*width: 375px;*/
     width: 80%;
-    text-align: left;
     top: 35%;
     left: 10%;
     margin: unset;
-  }
-  .instruction #pp {
-    font-size: 30px;
-  }
-  .instruction #cre {
-    margin-right: 100px;
   }
 }
 @media screen and (max-width: 455px) {

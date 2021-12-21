@@ -9,7 +9,7 @@
    # ================================================================= */
 body {
   background-color: #7bc8f1;
-  background-color: #061e3c;
+  background-color: #072a41;
   font-family: futura-pt, sans-serif;
 }
 
@@ -465,7 +465,11 @@ video {
   display: block;
 }
 .main__underBar:before,
-.main__underBar:after {
+.main__underBar:after,
+.main__underBar2:before,
+.main__underBar2:after,
+.main__underBar3:after,
+.main__underBar3::before {
   content: "";
   width: 88px;
   background-color: #ff4d5a;
@@ -477,34 +481,10 @@ video {
 }
 .main__underBar2:before,
 .main__underBar2:after {
-  content: "";
-  width: 88px;
   background-color: #1877f2;
-  height: 4px;
-  position: relative;
-  display: block;
-  border-radius: 5px;
-  top: 30px;
 }
-.main__underBar3:after {
-  content: "";
-  width: 88px;
+.main__underBar3::before {
   background-color: #1877f2;
-  height: 4px;
-  position: relative;
-  display: block;
-  border-radius: 5px;
-  top: 30px;
-}
-.main__underBar3:before {
-  background-color: #ff4d5a;
-  content: "";
-  width: 88px;
-  height: 4px;
-  position: relative;
-  display: block;
-  border-radius: 5px;
-  top: 30px;
 }
 
 .main__underBar:after {

@@ -1,4 +1,4 @@
 Flask==2.0.2
-pytube==11.0.2
+pytube==11.0.1
 youtube_dl==2021.6.6
 gunicorn

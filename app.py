@@ -35,12 +35,17 @@ def download_video():
             audio = url.streams.get_by_itag(itag)
             audio.stream_to_buffer(buffer)
             buffer.seek(0)
-            return send_file(buffer, as_attachment=True, download_name=url.title +".mp3",  mimetype="audio/mp4")
+            return send_file(buffer, as_attachment=True, download_name=url.title+".mp3",  mimetype="audio/mp4")
+        elif itag =="137":
+            h_video = url.streams.get_by_itag(itag)
+            h_video.stream_to_buffer(buffer)
+            ##h_audio = url.streams.filter(abr="160kbps",progressive=False, mime_type="audio/webm", type="audio")
+            return send_file(buffer, as_attachment=True, download_name=url.title+"-1080p(video only).mp4",  mimetype="video/mp4")
         else:
             video = url.streams.get_by_itag(itag)
             video.stream_to_buffer(buffer)
             buffer.seek(0)
-            return send_file(buffer, as_attachment=True, download_name=url.title +".mp4", mimetype="video/mp4")
+            return send_file(buffer, as_attachment=True, download_name=url.title+"-"+video.resolution+".mp4", mimetype="video/mp4")
     return redirect(url_for("home"))
 
 

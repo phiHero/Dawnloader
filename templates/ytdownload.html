@@ -140,7 +140,7 @@
 
             {% for h in url.streams.filter(progressive=False,
             type="video", mime_type="video/webm", res="1080p") %}
-            <option value="{{h.itag}}">{{h.resolution}} (video only)</option>
+            <option value="{{h.itag}}">{{h.resolution}} (no audio)</option>
             {% endfor %} 
             
             {% for a in url.streams.filter(progressive=False,

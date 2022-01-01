@@ -470,8 +470,9 @@ video {
 .main__underBar2:after {
   background-color: #1877f2;
 }
-.main__underBar3::before {
-  background-color: #1877f2;
+.main__underBar3::before,
+.main__underBar3::after {
+  background-color: #2ecc71;
 }
 
 .main__underBar:after {

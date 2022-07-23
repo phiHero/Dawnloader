@@ -123,7 +123,7 @@ html.fp-enabled,
   position: fixed;
   z-index: 100;
   margin-top: -32px;
-  top: 50%;
+  top: 45%;
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
 }
@@ -184,15 +184,15 @@ html.fp-enabled,
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  margin-top: 35px;
+  margin-top: 60px;
 }
 
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
-  height: 6px;
-  width: 100px;
+  height: 3px;
+  width: 65px;
   margin: -6px;
   background-color: white;
 }
@@ -201,8 +201,8 @@ html.fp-enabled,
 .fp-slidesNav ul li a span {
   position: absolute;
   z-index: 1;
-  height: 6px;
-  width: 50px;
+  height: 3px;
+  width: 35px;
   border: 0;
   left: 50%;
   background-color: white;

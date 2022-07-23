@@ -4,7 +4,7 @@ from pytube import YouTube
 from io import BytesIO
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "b'\x9d\x8a\x0fD\x04\x02\xda\xc7\xff\x9e\x0e\x9a\x15\xe0\x81\x87]\x06j\xab\x86\x99 G'"
+app.config['SECRET_KEY'] = "b\x9d\x8a\x0fD\x04\x02\xda\xc7\xff\x9e\x0e\x124a\x15\xe0\x81\x87]\x06j\xab\x86\x99o9uhwefweUOIfafeSJD213WQDQDWASDWQTFGA12325826rf2yafG"
 
 
 @app.route('/terms-conditions')
@@ -35,12 +35,17 @@ def download_video():
             audio = url.streams.get_by_itag(itag)
             audio.stream_to_buffer(buffer)
             buffer.seek(0)
-            return send_file(buffer, as_attachment=True, download_name=url.title+".mp3",  mimetype="audio/mp4")
+            return send_file(buffer, as_attachment=True, download_name=url.title+"-"+audio.abr+".mp3",  mimetype="audio/mp4")
+        elif itag =="249" or itag =="250" or itag =="251":
+            audio = url.streams.get_by_itag(itag)
+            audio.stream_to_buffer(buffer)
+            buffer.seek(0)
+            return send_file(buffer, as_attachment=True, download_name=url.title+"-"+audio.abr+".webm",  mimetype="audio/webm")
         elif itag =="137":
             h_video = url.streams.get_by_itag(itag)
             h_video.stream_to_buffer(buffer)
             ##h_audio = url.streams.filter(abr="160kbps",progressive=False, mime_type="audio/webm", type="audio")
-            return send_file(buffer, as_attachment=True, download_name=url.title+"-1080p(video only).mp4",  mimetype="video/mp4")
+            return send_file(buffer, as_attachment=True, download_name=url.title+"-1080p(No-audio).mp4",  mimetype="video/mp4")
         else:
             video = url.streams.get_by_itag(itag)
             video.stream_to_buffer(buffer)
@@ -54,7 +59,7 @@ def back():
 	return redirect(url_for("home"))
 
 """FB"""
-								
+
 @app.route('/download', methods=["POST", "GET"])
 def download():
 	if request.method == "POST":
@@ -90,4 +95,4 @@ def configure():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=3000,host= '192.168.1.6')

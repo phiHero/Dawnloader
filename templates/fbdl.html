@@ -23,38 +23,38 @@
         font-family: "IBM Plex Sans", sans-serif;
       }
       body {
-        background-color: #061e3c;
+        background-color: #0a2342;
       }
-      header {
-        margin-top: 20px;
-        margin-bottom: 35px;
-      }
-      header a {
-        text-decoration: none;
-        color: white;
-        opacity: 0.6;
-        font-size: 40px;
-        margin-left: 30px;
-        border: none;
-      }
-      .webName .webname3 {
-        font-size: 25px;
-        margin-left: 20px;
-        margin-bottom: 30px;
-        font-weight: 400;
+      .webname3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        font-weight: 600;
       }
       .wrapper {
         text-align: center;
+        margin-top: 150px;
       }
       .wrapper .container {
         margin: auto;
         width: 600px;
-        height: 199px;
+        height: 252px;
         border: 5px outset #1877f2;
         position: relative;
         padding-right: 10px;
         border-radius: 5px;
         background-color: white;
+      }
+      .wrapper .container #back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #1877f2;
+        color: white;
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 0 0 5px 0;
+        cursor: pointer;
       }
       .wrapper .container .video_info {
         display: flex;
@@ -70,9 +70,10 @@
       }
       .wrapper .container .bs {
         position: absolute;
-        left: 250px;
-        top: 80px;
-        margin-left: 20px;
+        right: 0;
+        top: 133px;
+        width: 350px;
+        margin-top: 10px;
       }
       .wrapper .container .bs select {
         width: 300px;
@@ -91,9 +92,12 @@
         cursor: pointer;
       }
       @media screen and (max-width: 800px) {
+        .wrapper {
+          margin-top: 80px;
+        }
         .wrapper .container {
           width: 375px;
-          height: 250px;
+          height: 303px;
         }
         .wrapper .container .video_info img {
           width: 175px;
@@ -112,21 +116,18 @@
     </style>
   </head>
   <body>
-    <header>
-      <a href="/indexing"><i class="fas fa-arrow-circle-left"></i></a>
-    </header>
-
     <div class="wrapper">
-      <div class="webName">
-        <p style="color: white" class="webname3">
+      <div class="container">
+        <form action="/indexing" method="get">
+          <button id="back">Back</button>
+        </form>
+        <p class="webname3">
           <span style="color: #1877f2; font-size: 25px">FB</span> Downloader
         </p>
-      </div>
-      <div class="container">
         <form method="post" action="/configure">
           <div class="video_info">
             <img
-              src="{{ url_for('static', filename = 'assets/image/OIP.jpg') }}"
+              src="{{ url_for('static', filename = 'assets/image/inf.jpg') }}"
               alt=""
             />
             <h3>No title</h3>

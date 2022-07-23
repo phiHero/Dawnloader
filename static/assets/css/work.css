@@ -1,38 +1,18 @@
-.main__box {
-  width: 45%;
-  top: 18%;
-  margin: 11%;
-  margin-right: 10%;
-}
-
-header {
-  background: #072142;
-}
-#s1 {
-  background-image: -webkit-linear-gradient(#072142 60%, #061c37);
-}
-#s2 {
-  background-image: linear-gradient(#061c37 60%, #07182b);
-}
-#s3 {
-  background-image: linear-gradient(to bottom, #07182b 60%, #061220);
-}
 .wrapper {
-  width: 500px;
+  width: 550px;
   height: 500px;
-  margin-top: 17.5%;
+  margin-top: 28vh;
   margin-right: 100px;
   text-align: center;
 }
 .wrapper #enterurl {
   font-size: 20px;
   color: white;
-  margin-bottom: 8px;
 }
 .wrapper input {
   background-color: white;
   width: 100%;
-  padding: 20px 10px;
+  padding: 20px 15px;
   cursor: pointer;
   border-radius: 25px;
   border: 3px solid #ff4d5a;
@@ -65,7 +45,7 @@ header {
 .instruction {
   width: 600px;
   height: 800px;
-  margin-top: 12%;
+  margin-top: 19.5vh;
   margin-right: 100px;
   color: white;
   font-weight: 300;
@@ -76,24 +56,39 @@ header {
   margin-bottom: 20px;
   font-size: 32px;
   font-weight: 500;
-  background: linear-gradient(45deg, white, #2ecc71);
+  /* background: linear-gradient(45deg, white, #2ecc71);
   background-size: 95% 3px;
   background-repeat: no-repeat;
-  background-position: bottom center;
-  font-family: "Pushster", cursive;
+  background-position: bottom center; */
 }
-.instruction #video {
-  width: 100%;
-  max-width: 550px;
-}
+
 .instruction .glitch {
-  margin: 20px 0;
+  margin: 20px 0 10px;
   font-size: 2rem;
   font-weight: 500;
   animation: glitch 3s linear infinite;
-  font-family: "Pushster", cursive;
 }
-
+.underbar_i {
+  width: 100%;
+  max-height: 18px;
+}
+.underbar_instruction1,
+.underbar_instruction2 {
+  content: "";
+  position: relative;
+  width: 50%;
+  height: 2px;
+  display: inline-block;
+  background: #2ecc71;
+  border-radius: 2px;
+  top: -20px;
+}
+.underbar_instruction1 {
+  left: -100px;
+}
+.underbar_instruction2 {
+  right: -100px;
+}
 .mySlides {
   display: none;
 }
@@ -103,11 +98,22 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 550px;
+  max-width: 500px;
   position: relative;
-  margin-left: 15px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
-
+.instruction #video {
+  width: 100%;
+  max-width: 475px;
+  margin: 0 auto;
+  border: solid 3px #104225;
+  border-radius: 5px;
+}
+.instruction #video_text {
+  width: 100%;
+  max-width: 500px;
+}
 /* Next & previous buttons */
 .prev,
 .next {
@@ -157,14 +163,14 @@ img {
   cursor: pointer;
   height: 10px;
   width: 4px;
-  margin: 0 15px;
+  margin: 0px 30px;
   background-color: white;
   border-radius: 2px;
   display: inline-block;
 }
 
 .active {
-  height: 17px;
+  height: 20px;
 }
 
 /* Fading animation */
@@ -178,10 +184,13 @@ img {
   text-align: left;
   margin-left: 50px;
   font-size: 23px;
-  margin-top: 8%;
+  margin-top: 3%;
   font-family: futura-pt, sans-serif;
   line-height: 32px;
 }
+/* .slideshow-container .steps span::after {
+  content: "Youtube/Facebook";
+} */
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -201,11 +210,71 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
+
+@media screen and (max-width: 1710px) {
+  .wrapper {
+    width: 500px;
+  }
+  .wrapper input {
+    padding: 15px 10px;
+  }
+  .slideshow-container .steps {
+    margin-left: 45px;
+    font-size: 20px;
+  }
+  .slideshow-container {
+    max-width: 450px;
+  }
+  .instruction .glitch {
+    margin: 10px 0 5px;
+  }
+  .instruction #video,
+  .instruction #video_text {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .wrapper {
+    width: 475px;
+  }
+  .wrapper button {
+    padding: 9px 23px 9px 19px;
+    font-size: 16px;
+  }
+  .wrapper {
+    margin-top: 25vh;
+    margin-right: 50px;
+  }
+  .wrapper #enterurl {
+    font-size: 18px;
+  }
+  .instruction {
+    width: 500px;
+    margin-top: 16vh;
+  }
+  .slideshow-container .steps {
+    margin-left: 35px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .slideshow-container {
+    max-width: 400px;
+  }
+
+  .instruction #video_text {
+    max-width: 400px;
+  }
+  .instruction #video {
+    max-width: 375px;
+  }
+  .underbar_instruction1 {
+    left: -90px;
+  }
+  .underbar_instruction2 {
+    right: -90px;
+  }
+  #fp-nav {
+    top: 40%;
   }
 }
 
@@ -218,24 +287,30 @@ img {
   .wrapper {
     width: 500px;
     text-align: center;
-    margin: 0 0 0 10%;
+    margin: 0 0 0 9.9%;
   }
   .wrapper input {
     padding: 15px 10px;
   }
   .main__wrapper {
     position: absolute;
-    top: 0;
+    top: 2vh;
     width: 100vw;
-    height: 100%;
+    height: 60vh;
     display: unset;
   }
   .main__box {
     top: unset;
-    margin: 13.5% 0% 45px 10%;
+    margin: 5vh 0 37.5px 10%;
+  }
+  .slideshow-container .steps {
+    margin: 0 0 0 25px;
   }
 }
 @media screen and (max-width: 700px) {
+  header {
+    height: 50px;
+  }
   .main__name {
     font-size: 65px;
     line-height: 58px;
@@ -308,20 +383,44 @@ img {
   .instruction {
     position: absolute;
     /*width: 375px;*/
+    margin-top: 10vh;
     width: 80%;
-    top: 35%;
     left: 10%;
-    margin: unset;
   }
   .instruction #video {
-    max-height: 250px;
+    max-width: 325px;
   }
   .slideshow-container {
     max-height: 250px;
-    margin: unset;
   }
   .slide-to-read {
-    font-size: 22px;
+    font-size: 24px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .slideshow-container .steps {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 10px;
+  }
+  .slideshow-container .steps span {
+    display: none;
+  }
+  .instruction .glitch {
+    display: none;
+  }
+  .dot {
+    margin: 5px 20px 0;
+  }
+  .underbar_instruction1,
+  .underbar_instruction2 {
+    width: 60%;
+  }
+  .underbar_instruction1 {
+    left: -75px;
+  }
+  .underbar_instruction2 {
+    right: -75px;
   }
 }
 @media screen and (max-width: 455px) {
@@ -347,22 +446,35 @@ img {
     font-size: 14px;
     position: absolute;
     right: 5px;
-    top: 26px;
+    top: 34px;
   }
   #fp-nav {
     bottom: 3%;
   }
   .header__logo a {
-    font-size: 20px;
+    font-size: 18px;
     position: absolute;
-    top: 20px;
     left: 20px;
+    top: 28px;
   }
   .wrapper button {
     margin-top: 8px;
   }
   .wrapper input {
-    padding: 13px 10px;
+    padding: 12.5px 10px;
+  }
+  .underbar_instruction1 {
+    left: -60px;
+  }
+  .underbar_instruction2 {
+    right: -60px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
   }
 }
 ::selection {

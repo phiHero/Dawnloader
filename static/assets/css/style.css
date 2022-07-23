@@ -4,6 +4,8 @@
    # ================================================================= */
 body {
   font-family: futura-pt, sans-serif;
+  background: linear-gradient(#072142 45%, #061c37);
+  z-index: -100;
 }
 
 html {
@@ -161,10 +163,10 @@ input {
 
 /* Apply cursor pointer to button elements */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"],
-[role="button"] {
+[type='button'],
+[type='reset'],
+[type='submit'],
+[role='button'] {
   cursor: pointer;
 }
 
@@ -173,18 +175,18 @@ button,
   cursor: default;
 }
 
-[type="number"] {
+[type='number'] {
   width: auto;
   /* Firefox 36+ */
 }
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* Safari 8+ */
 }
 
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
   /* Safari 8 */
 }
@@ -217,25 +219,25 @@ button {
 
 /* Remove inner padding and border in Firefox 4+ */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: 0;
   padding: 0;
 }
 
 /* Replace focus style removed in the border reset above */
 button:-moz-focusring,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   outline: 1px dotted ButtonText;
 }
 
 button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
+html [type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
   /* Correct the inability to style clickable types in iOS */
 }
@@ -294,7 +296,7 @@ legend {
   /* Change font properties to `inherit` in Chrome and Safari */
 }
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* Correct the odd appearance in Chrome and Safari */
   outline-offset: -2px;
@@ -332,17 +334,17 @@ video {
      # ================================================================= */
 /* Hide content from screens but not screenreaders */
 @media screen {
-  [hidden~="screen"] {
+  [hidden~='screen'] {
     display: inherit;
   }
-  [hidden~="screen"]:not(:active):not(:focus):not(:target) {
+  [hidden~='screen']:not(:active):not(:focus):not(:target) {
     position: absolute !important;
     clip: rect(0 0 0 0) !important;
   }
 }
 
 /* Specify the progress cursor of updating elements */
-[aria-busy="true"] {
+[aria-busy='true'] {
   cursor: progress;
 }
 
@@ -376,6 +378,9 @@ video {
 
 .header {
   padding: 40px 40px 0 40px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(#072142, #072142);
 }
 
 .header__wrapper {
@@ -399,27 +404,16 @@ video {
   display: flex;
 }
 
-.header__box :nth-child(3) {
-  top: -5px;
-  position: relative;
-}
-
 .header__icon {
   font-size: 2.4rem;
   color: white;
   margin-right: 32px;
 }
-
-.header__line {
-  background-color: white;
-  height: 2px;
-  width: 16px;
-}
 .main {
   height: 100vh;
 }
 .main__wrapper {
-  height: 100vh;
+  height: 85vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -429,7 +423,12 @@ video {
   justify-content: space-between;
   position: relative;
 }
-
+.main__box {
+  width: 45%;
+  margin: 11%;
+  margin-right: 10%;
+  margin-top: 15vh;
+}
 .main__name {
   color: white;
   font-size: 11.5rem;
@@ -439,14 +438,8 @@ video {
   letter-spacing: 5px;
 }
 
-.main__underBar {
-  position: relative;
-  display: block;
-}
-.main__underBar2 {
-  position: relative;
-  display: block;
-}
+.main__underBar,
+.main__underBar2,
 .main__underBar3 {
   position: relative;
   display: block;
@@ -457,7 +450,7 @@ video {
 .main__underBar2:after,
 .main__underBar3:after,
 .main__underBar3::before {
-  content: "";
+  content: '';
   width: 88px;
   background-color: #ff4d5a;
   height: 4px;
@@ -493,5 +486,41 @@ video {
   font-size: 2.8rem;
   text-decoration: none;
   margin-top: 72px;
+}
+
+@media screen and (max-width: 1710px) {
+  .main__name {
+    font-size: 9.5em;
+    line-height: 98px;
+    letter-spacing: 4px;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .main__box {
+    top: unset;
+    margin-top: 13vh;
+  }
+  .main__name {
+    font-size: 9em;
+    line-height: 90px;
+    letter-spacing: 3.5px;
+  }
+  .main__info {
+    font-size: 2.5em;
+  }
+  .header__icon,
+  .header__name {
+    font-size: 2.2em;
+  }
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+    width: 40px;
+  }
+  #fp-nav ul li a.active span,
+  .fp-slidesNav ul li a.active span,
+  #fp-nav ul li:hover a.active span,
+  .fp-slidesNav ul li:hover a.active span {
+    width: 60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

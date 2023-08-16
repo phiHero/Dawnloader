@@ -20,7 +20,7 @@
 }
 .wrapper #terms {
   color: white;
-  font-size: 12px;
+  font-size: max(0.82vmax, 12px);
   margin: 8px 0px 0px 10px;
 }
 .wrapper a {

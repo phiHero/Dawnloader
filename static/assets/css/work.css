@@ -74,7 +74,7 @@
 }
 .underbar_instruction1,
 .underbar_instruction2 {
-  content: "";
+  content: '';
   position: relative;
   width: 50%;
   height: 2px;
@@ -310,6 +310,7 @@ img {
 @media screen and (max-width: 700px) {
   header {
     height: 50px;
+    margin: 1.5vh 0 5vh;
   }
   .main__name {
     font-size: 65px;

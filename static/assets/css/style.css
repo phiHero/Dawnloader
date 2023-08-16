@@ -182,6 +182,7 @@ button,
 
 [type='search'] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   /* Safari 8+ */
 }
 
@@ -239,6 +240,7 @@ html [type='button'],
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
+  appearance: button;
   /* Correct the inability to style clickable types in iOS */
 }
 
@@ -263,6 +265,7 @@ select {
   -moz-appearance: none;
   /* Firefox 36+ */
   -webkit-appearance: none;
+  appearance: none;
   /* Chrome 41+ */
 }
 
@@ -298,6 +301,7 @@ legend {
 
 [type='search'] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   /* Correct the odd appearance in Chrome and Safari */
   outline-offset: -2px;
   /* Correct the outline style in Safari */

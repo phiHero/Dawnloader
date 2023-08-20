@@ -39,6 +39,11 @@
 .wrapper button:hover {
   margin-top: 5px;
 }
+.wrapper button:disabled {
+  opacity: 0.7;
+  pointer-events: none;
+  cursor: not-allowed;
+}
 .wrapper p {
   text-align: left;
 }

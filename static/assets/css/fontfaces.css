@@ -1,0 +1,13 @@
+@font-face {
+  font-family: futura-pt;
+  src: url('../fonts/futura-pt.woff') format('embedded-opentype'),
+    /* Internet Explorer */ url('../fonts/futura-pt.woff') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/futura-pt.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('../fonts/futura-pt.woff')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/futura-pt.woff') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+}

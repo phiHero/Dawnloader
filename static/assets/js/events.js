@@ -3,19 +3,31 @@ new fullpage('#fullPage', {
   navigation: true,
   navigationPosition: 'left',
 });
-
+const expression =
+  /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi;
+const regexURL = new RegExp(expression);
 // Input validation 😅
 const forms = document.querySelectorAll('.download_form');
 for (const form of forms) {
-  form.addEventListener('input', () => {
-    const input = form.querySelector('.url_input');
-    const btn = form.querySelector('.download_btn');
-    if (input.value.trim().length > 15) {
-      btn.removeAttribute('disabled');
-    } else {
-      btn.setAttribute('disabled', 'disabled');
-    }
+  const input = form.querySelector('.url_input');
+  const btn = form.querySelector('.download_btn');
+
+  btn.addEventListener('click', () => {
+    validateInput(input, btn) && form.submit();
   });
+  form.addEventListener('input', () => {
+    validateInput(input, btn);
+  });
+}
+
+function validateInput(inputEl, btn) {
+  const result = inputEl.value.match(regexURL);
+  if (result) {
+    btn.removeAttribute('disabled');
+  } else {
+    btn.setAttribute('disabled', 'disabled');
+  }
+  return result;
 }
 
 // Slideshow

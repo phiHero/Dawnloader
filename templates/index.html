@@ -40,6 +40,57 @@
     </header>
 
     <div id="fullPage">
+      <section id="s4" class="main section s1">
+        <div class="main__wrapper">
+          <div class="main__box">
+            <h1 class="main__name">
+              Video Downloader
+            </h1>
+            <span class="main__underBar"></span>
+            <p class="main__info">
+              Download video /<br />
+              audio.
+            </p>
+          </div>
+
+          <div class="wrapper">
+            <p id="enterurl">
+              <i class="fas fa-link"></i> Enter video url:
+            </p>
+
+            <form class="download_form" id="inputForm3" action="/download" method="POST">
+              <div class="container">
+                <div>
+                  <input
+                    class="url_input"
+                    id="input1"
+                    type="text"
+                    name="url"
+                    class="input1"
+                    placeholder="Paste your link here..."
+                  />
+                </div>
+              </div>
+              <p id="terms">
+                By clicking "Download", you agree with
+                <a href="/terms-conditions">Terms and conditions</a>.
+              </p>
+              <div>
+                <button
+                  class="download_btn"
+                  id="button1"
+                  type="button"
+                  name="submit_video"
+                  value="submit_video"
+                >
+                  <i class="fas fa-download"></i> Download
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <section id="s1" class="main section s1">
         <div class="main__wrapper">
           <div class="main__box">
@@ -118,7 +169,7 @@
               <i class="fas fa-link"></i> Enter video url:
             </p>
 
-            <form id="inputForm2" class="download_form" action="/download" method="post">
+            <form id="inputForm2" class="download_form" action="/fb" method="post">
               <div class="container">
                 <div>
                   <input
@@ -324,7 +375,7 @@
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-  </div>
+        </div>
 
       </section>
     </div>
